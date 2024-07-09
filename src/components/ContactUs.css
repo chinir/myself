@@ -1,115 +1,152 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px 20px;
-    /* background-color: #f7f7f7; */
-  }
-  
-  .contact-title {
-    text-align: center;
-  }
-  
-  .contact-title h1 {
-    padding: 10px 30px;
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: white;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 20px;
+  /* background-color: #f7f7f7; */
+}
+
+.contact-title {
+  text-align: center;
+}
+
+.contact-title h1 {
+  padding: 10px 30px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 50%;
+}
+
+.contact-left h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+  max-width: 550px;
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fbfbfb;
+  font-size: 1rem;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #df8908;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 50%;
+}
+
+.contact-right label {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.contact-right input,
+.contact-right textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  outline: none;
+  border-color: #df8908;
+}
+
+.contact-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #df8908;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submit:hover {
+  background-color: #b415ff;
+}
+
+/* Media query for tablets and below */
+@media (max-width: 768px) {
   .contact-section {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    max-width: 1200px;
-    width: 100%;
-    justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
   }
-  
-  .contact-left {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 50%;
+
+  .contact-left, .contact-right {
+      max-width: 100%;
   }
-  
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .contact-title h1 {
+      font-size: 2rem;
+      padding: 10px 20px;
+  }
+
   .contact-left h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+      font-size: 1.5rem;
   }
-  
-  .contact-left p {
-    max-width: 550px;
-    color: white;
-    font-size: 1rem;
+
+  .contact-left p, .contact-details, .contact-right label {
+      font-size: 0.875rem;
   }
-  
-  .contact-details {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: #fbfbfb;
-    font-size: 1rem;
-  }
-  
-  .contact-detail {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
+
   .contact-icon {
-    font-size: 1.5rem;
-    color: #df8908;
+      font-size: 1.25rem;
   }
-  
-  .contact-right {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 50%;
-  }
-  
-  .contact-right label {
-    font-size: 1rem;
-    color: #ffffff;
-  }
-  
-  .contact-right input,
-  .contact-right textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #fff;
-  }
-  
-  .contact-right input:focus,
-  .contact-right textarea:focus {
-    outline: none;
-    border-color: #df8908;
-  }
-  
+
   .contact-submit {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #df8908;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+      font-size: 0.875rem;
+      padding: 8px 16px;
   }
-  
-  .contact-submit:hover {
-    background-color: #b415ff;
-  }
-  
+}
