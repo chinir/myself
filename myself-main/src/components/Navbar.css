@@ -1,0 +1,127 @@
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+
+
+}
+.nav-logo {
+    height: 120px; /* Adjust height as needed */
+    width: auto;  /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and menu */
+}
+
+.nav-manu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size:20px;
+}
+
+.nav-connect{
+    padding:20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%,#B923E1 102.06%);
+    font-size:22px;
+    cursor: pointer;
+}
+.hero-connect{
+    padding: 25px 45px;
+    border-radius:50px ;
+    background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+    cursor: pointer;
+}
+
+.hero-resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border:2px solid #fff;
+    cursor: pointer;
+}
+
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 1200px) {
+    .navbar {
+        margin: 20px 100px;
+    }
+
+    .nav-menu {
+        gap: 50px;
+        font-size: 18px;
+    }
+
+    .nav-connect, .hero-connect, .hero-resume {
+        padding: 18px 36px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    .nav-logo {
+        height: 100px;
+    }
+
+    .nav-menu {
+        gap: 40px;
+        font-size: 16px;
+    }
+
+    .nav-connect, .hero-connect, .hero-resume {
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: 20px 30px;
+    }
+
+    .nav-logo {
+        height: 90px;
+    }
+
+    .nav-menu {
+        gap: 30px;
+        font-size: 14px;
+    }
+
+    .nav-connect, .hero-connect, .hero-resume {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        margin: 20px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-logo {
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-connect, .hero-connect, .hero-resume {
+        padding: 12px 24px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,82 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding: 20px; /* Add padding for better spacing on small screens */
+}
+
+.hero img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;   /* Maintains the aspect ratio */
+    margin: 1px;
+    object-fit: contain; /* Ensures the image fits within the bounds without being cropped */
+}
+
+.hero h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.hero h1 span {
+    background: linear-gradient(270deg, #Df8908 10%, #B415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 50px;
+    margin: 50px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .hero h1 {
+        width: 90%;
+        font-size: 40px;
+    }
+
+    .hero p {
+        width: 80%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .hero-action {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px;
+        font-size: 20px;
+        margin: 20px;
+    }
+}
+
+/* Media query for very small devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .hero-action {
+        font-size: 18px;
+        margin: 15px;
+    }
+}
