@@ -1,23 +1,28 @@
 import React from 'react'
 import './Mywork.css'
 import jobjunction from '../assets/jobjunction.png'
-import timer from '../assets/timer.png'
-import ngo from '../assets/ngo.png'
+import timer from '../assets/sorts.png'
+import ngo from '../assets/bitd.jpg'
 
 const projects = [
     {
       title: 'Job-junction',
-      description: 'this is my first project. It involves technologies like React, CSS, and JavaScript.',
-      link: 'https://github.com/chinir/jobjunction',
+      description: 'A MERN-based job portal connecting job seekers and employers with seamless search, applications, and personalized features.',
+      link: 'https://jobjunction1.onrender.com/',
          image: jobjunction,
     },
     {
       title: 'Sorting-Visulizer',
-      description: 'This is a brief description of Project Two. It involves technologies like HTML, CSS, and Node.js.',
+      description: 'An interactive MERN-based app for visually exploring and understanding sorting algorithms with real-time animations and complexity insights',
        link: 'https://sortvisulize.netlify.app/',
       image: timer,
     },
-    
+    {
+        title: 'CRYPTD2',
+        description: 'IN PROGRESS',
+         //link: 'https://sortvisulize.netlify.app/',
+        image: ngo,
+      },
     // Add more projects as needed
   ];
   function Mywork() {
